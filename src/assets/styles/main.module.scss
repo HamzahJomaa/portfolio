@@ -1,0 +1,96 @@
+$primary-color: #5CE1E6;
+$background-color: #242424;
+
+
+.Container{
+  background-color: $background-color;
+  color: white;
+
+  .Introduction{
+    height: 100vh;
+    scroll-padding-bottom: 100vh;
+    .BoxIntroduction{
+      top: 40vh;
+      position: relative;
+      padding: 0 5%;
+      h2,h5{
+        text-transform: uppercase;
+        font-weight: bolder;
+        text-align: center;
+        span{
+          color: $primary-color;
+        }
+      }
+      h6{
+        text-align: right;
+        position: relative;
+        top: 20vh;
+      }
+    }
+  }
+  .Outline{
+    height: 100vh;
+    .BoxOutline{
+      padding:5%;
+      h3{font-weight: bolder ;}
+      .BoxOutlineItems{
+        width: fit-content;
+        padding-left: 75%;
+        padding-top: 15%;
+        h5{
+          display: flex;
+          align-items: center;
+          line-height: 2.5;
+          cursor: pointer;
+          &:before{
+            content: '';
+            display: inline-block;
+            width: 10px;
+            margin-right: 10px;
+            height: 10px;
+            -moz-border-radius: 7.5px;
+            -webkit-border-radius: 7.5px;
+            border-radius: 7.5px;
+            background-color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+  .CoreServices{
+    height: 100vh;
+    .BoxServices{
+      position: relative;
+      padding: 5%;
+      h3{font-weight: bolder;}
+      .BoxServicesItems{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20%;
+        .BoxServicesItem{
+          height: 30vh;
+          width: 30%;
+          .img{
+            width: 4vw;
+            height: 4vw;
+            padding: 15px;
+            border-radius: 50%;
+            border: 3px solid $primary-color;
+            text-align: center;
+            img{
+              width: 80%;
+              margin-top: 10px;
+            }
+          }
+          h5{
+            margin-top: 5%;
+          }
+          h6{
+            margin-top: 3%;
+          }
+        }
+      }
+    }
+  }
+}
