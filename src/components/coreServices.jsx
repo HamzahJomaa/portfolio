@@ -16,7 +16,7 @@ const Servies = ({title,subtitle,items}) =>{
                         return (
                             <Box className={style.BoxServicesItem}>
                                 <Box className={style.img}>
-                                    <img  width={40} src={`/core${index+1}.png`} />
+                                    <img  width={40} src={`./core${index+1}.png`} />
                                 </Box>
                                 <Typography variant={"h5"}>{item.title}</Typography>
                                 <Typography variant={"h6"}>{item.text}</Typography>
